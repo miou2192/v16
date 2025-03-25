@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- this is how you add a comment outside of your stylesheet. it does not affect what your website looks like and only exists for communicative purposes -->
+    <!-- meta charset utf 8 allows for character encoding. essentially anything outside of traditional ascii (emojis) can be entered without hassle so long as you include this line -->
+    <meta charset="UTF-8">
+    <!-- resizing for mobile. it will NOT automatically make your website mobile friendly... but most neocities sites arent mobile friendly so dont worry too much about it -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the title tag changes what appears in your tabname -->
+    <title>tab title</title>
+    <!-- the line below is only necessary if your stylesheet is NOT directly in this document. if it is (aka you have a <style> section somewhere within this document) you may delete it, it wont do anything -->
+    <!-- if you would like to have your style sheet be the same for each html document, keep the below line, and create your stylesheet in a "style.css" document somewhere within your dashboard -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    /* this is how you add a comment inside of your stylesheet */
+    /* this is typically where you would place your stylesheet if you are creating it within your html document */
+    /* you can style nearly ANYTHING using a stylesheet! */
+    /* below is a style rule. it is a rule you can create in your style. to use it you must implement it into your html. in this example, the only thing this style rule tells the html is that the background of our site should be blue */
+    body {
+      /* everything within the curly brackets is defined as a declaration block. it contains all the property values (or, declarations) for the style rule */
+      background-color /* this is a property */: blue; /* this is a value */
+    }
+    
+    p {
+      /* this style rule says that all items tagged with "p" (essentially, all text) must be white, and size 10 in pixels */
+     color: white;
+     font-size: 10px;
+    }
+    
+    a {
+      /* this style rule says that all items tagged with "a" (essentially, all links) must be red */
+    color: red;
+    }
+    
+    h1 {
+      /* this style rule says that all items tagged with "h1" (essentially, all first headers) must be yellow */
+    color: yellow;
+    }
+    
+    h2 {
+      /* this style rule says that all items tagged with "h2" (essentially, all second headers) must be pink */
+    color: pink;
+    }
+
+    h3 {
+      /* this style rule says that all items tagged with "h3" (essentially, all third headers) must be brown */
+    color: brown;
+    }
+    
+  </style>
+  </head>
+  
+  <body>
+  
+    <h1>h1, h2, and h3 are header tags</h1>
+    <h2>they increase size and decrease size</h2>
+    <h3>you can style them using css, as we already have</h3>
+  <p>here is some plain text.</p>
+    <!-- this is a simple break, which creates some extra space -->
+  <br> 
+  as you can see, since this text is NOT tagged "p", it does not have any style we previously defined applied to it
+  <p>in order to make a hyperlink, you type the following... <a href="link goes in this space">the text here is what the link will be applied to</a></p>
+  <p>you can <b>bold</b>, <i>italicise</i>, <u>underline</u>, and <s>strikethrough</s> text. there are many formatting options to be applied</p>
+  <p><marquee>my favorite is marquee, which creates sliding text :-)</marquee></p>
+
+    <p>heres an example of an image you have installed to your dashboard:</p>
+    <img src="example.png"
+    style="width:150px;">
+    
+    <p>heres an example of an image you have NOT installed to your dashboard, using an image address:</p>
+    <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg" 
+    style="width:100px;">
+    <!-- you may notice the "style" above - this is called inline css. it is called that because it is within the line, instead of in the stylesheet. this can be done namely when you only want a single item to have a special attribute, rather than every single item of that type. in this example, we dont want the images to be the same size, so we use inline -->
+    <p>heres a list... as you can see, because we have not styled any of the tags for a list, it has no css applied</p>
+    <ul>
+      <li>first thing</li>
+      <li>second thing</li>
+      <li>third thing</li>
+    </ul>
+    
+  </body>
+  
+    <!-- how you end an html document -->
+</html>
